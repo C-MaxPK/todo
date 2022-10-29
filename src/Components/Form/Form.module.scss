@@ -1,0 +1,42 @@
+.task {
+
+	&Form {
+		min-height: 40px;
+		display: flex;
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	&Input {
+		min-width: 50%;
+		height: inherit;
+		flex-grow: 1;
+		border: none;
+		outline: none;
+		padding: 0 10px;
+		border-radius: 10px 0 0 10px;
+		font-size: 14px;
+		
+		&::placeholder {
+			font-size: 14px;
+			font-style: italic;
+		}
+	}
+}
+
+.addTaskBtn {
+	height: inherit;
+	cursor: pointer;
+	border: none;
+	padding: 0 15px;
+	border-radius: 0 10px 10px 0;
+
+	&:hover {
+		background-color: rgb(255, 173, 173);
+	}
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+}
